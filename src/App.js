@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React, {useRef, useEffect} from 'react';
 import './App.css';
+import FirstComponent from './components/FirstComponent';
+import SecondComponent from './components/SecondComponent';
+
 
 function App() {
+
+  const MyRef = useRef(null)
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      MyRef.current.style.cssText = `--scrollTop: ${window.scrollY}px`
+      console.log(MyRef.current)
+    })
+  }, [])
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div ref={MyRef} >
+      <FirstComponent />
+      <SecondComponent />
     </div>
   );
 }

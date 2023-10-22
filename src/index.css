@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), 
+      url('./fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: local('RobotoBold'), 
+      url('./fonts/Roboto-Bold.ttf');
+  font-weight: 900;
+}
+
+.roboto-script {
+  font-family: 'Roboto';
+}
