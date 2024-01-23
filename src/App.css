@@ -94,18 +94,87 @@
   border-radius: 20px;
 }
 
-.main-article__header {
-  font-size: var(--index);
+/* Main article start here */
+.main-article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 1000px;
+  color: blanchedalmond;
+}
+
+.main_article-wrapper {
+  max-width: 85vw;
+}
+
+.main-article__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10vw;
+  align-items: center;
+}
+
+.main_article__about {
+  background: rgba(40, 40, 40, 0.6);
+  border-radius: 5%;
+  padding: 3vh 3vh 3vh 3vh;
+  width: 100%;
+  text-align: justify;
+}
+
+.main-article__about-title {
+  font-size: 5.5vh;
+  padding-bottom: 2vh;
   text-align: center;
 }
 
-h2 p {
-  padding: 2vh;
-  text-align: justify;
-  font-size: calc(var(--index)/2.3);
+.main-article__about-desc {
+  font-size: 2.3vh;
 }
 
-h3 {
-  padding-top: 2vh;
-  font-size: calc(var(--index)/1.6)
+.main__article-exp {
+  background: rgba(40, 40, 40, 0.6);
+  border-radius: 5%;
+  padding: 3vh 3vh 3vh 3vh;
+  width: 100%;
+  text-align: justify;
 }
+
+.main__article-expirience{
+  text-align: center;
+}
+
+.main__article-exp-title {
+  font-size: 5.5vh;
+  padding-bottom: 2vh;
+  text-align: center;
+}
+
+.main__article__job {
+  text-align: center;
+  font-size: 2.6vh;
+  padding-bottom: 1.5vh;
+}
+
+.main__article__tasks {
+  padding-bottom: 2vh;
+  font-size: 2.3vh;
+}
+/*.main-article__header {*/
+/*  font-size: var(--index);*/
+/*  text-align: center;*/
+/*}*/
+
+/*h2 p {*/
+/*  padding: 2vh;*/
+/*  text-align: justify;*/
+/*  font-size: calc(var(--index)/2.3);*/
+/*}*/
+
+/*h3 {*/
+/*  padding-top: 2vh;*/
+/*  font-size: calc(var(--index)/1.6)*/
+/*}*/
+
+/* Main article end here */
